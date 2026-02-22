@@ -11,62 +11,61 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
 body{
-background: radial-gradient(circle at top left,#0f2b5f,#081224 60%);
-color:#ffffff;
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+color:#fff;
 overflow-x:hidden;
 }
 
-section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-h1,h2,h3{letter-spacing:0.5px;}
-
-.hero{
+header{
 text-align:center;
-padding-top:120px;
-padding-bottom:100px;
+padding:120px 20px 100px;
+background:radial-gradient(circle at center,#1e3a8a,#020617);
 }
 
-.hero h1{
-font-size:56px;
+header h1{
+font-size:64px;
 font-weight:800;
-background:linear-gradient(90deg,#5fa8ff,#00e0ff);
+background:linear-gradient(90deg,#00d4ff,#ffd700);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
 
-.hero p{
-margin-top:20px;
+header p{
+margin-top:15px;
 font-size:20px;
-opacity:0.85;
+opacity:0.9;
 }
 
-.cta-btn{
-margin-top:30px;
-padding:14px 28px;
+.cta{
+margin-top:35px;
+padding:16px 32px;
 border:none;
-border-radius:40px;
-background:linear-gradient(90deg,#00e0ff,#5fa8ff);
+border-radius:50px;
+background:linear-gradient(90deg,#ffd700,#00d4ff);
 color:#000;
 font-weight:700;
 cursor:pointer;
 font-size:16px;
-box-shadow:0 0 25px rgba(0,224,255,0.4);
+box-shadow:0 0 30px rgba(255,215,0,0.4);
 transition:0.3s;
 }
 
-.cta-btn:hover{
-transform:translateY(-3px);
+.cta:hover{transform:scale(1.05);}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
 }
 
 .section-title{
 text-align:center;
-font-size:34px;
-margin-bottom:50px;
+font-size:38px;
 font-weight:700;
+margin-bottom:60px;
+background:linear-gradient(90deg,#00d4ff,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .grid{
@@ -76,113 +75,120 @@ gap:30px;
 }
 
 .card{
-background:rgba(255,255,255,0.06);
-backdrop-filter:blur(12px);
-border-radius:20px;
-padding:30px;
+background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.1);
-transition:0.3s;
+backdrop-filter:blur(20px);
+padding:35px;
+border-radius:25px;
+transition:0.4s;
 }
 
 .card:hover{
-transform:translateY(-6px);
-border:1px solid #00e0ff;
-box-shadow:0 0 25px rgba(0,224,255,0.2);
+transform:translateY(-8px);
+border:1px solid #ffd700;
+box-shadow:0 0 40px rgba(255,215,0,0.3);
 }
 
 .card h3{
-margin-bottom:12px;
-font-size:20px;
+font-size:22px;
+margin-bottom:15px;
 }
 
 .price{
-margin-top:12px;
+margin-top:10px;
+font-size:18px;
 font-weight:600;
-color:#00e0ff;
+color:#00d4ff;
 }
 
 form{
 background:rgba(255,255,255,0.05);
-padding:40px;
-border-radius:20px;
+padding:45px;
+border-radius:25px;
 border:1px solid rgba(255,255,255,0.1);
-backdrop-filter:blur(12px);
+backdrop-filter:blur(20px);
 max-width:700px;
 margin:auto;
 }
 
 form input, form select{
 width:100%;
-padding:14px;
+padding:16px;
 margin:14px 0;
-border-radius:10px;
+border-radius:12px;
 border:none;
 background:rgba(255,255,255,0.08);
 color:#fff;
+font-size:14px;
 }
 
 form input::placeholder{color:#ccc;}
 
-.submit-btn{
-width:100%;
+.submit{
 margin-top:15px;
-padding:15px;
+width:100%;
+padding:16px;
 border:none;
-border-radius:12px;
-background:linear-gradient(90deg,#00e0ff,#5fa8ff);
+border-radius:15px;
+background:linear-gradient(90deg,#ffd700,#00d4ff);
 color:#000;
 font-weight:700;
-cursor:pointer;
 font-size:16px;
+cursor:pointer;
 }
 
 .policy{
 background:rgba(255,255,255,0.05);
-padding:30px;
-border-radius:20px;
+padding:35px;
+border-radius:25px;
 border:1px solid rgba(255,255,255,0.1);
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 footer{
 text-align:center;
-padding:40px;
+padding:50px 20px;
 opacity:0.7;
 font-size:14px;
+border-top:1px solid rgba(255,255,255,0.1);
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
+<header>
 <h1>Velora</h1>
 <p>Where Emotions Meet Clarity</p>
-<button class="cta-btn" onclick="document.getElementById('booking').scrollIntoView()">Book Private Session</button>
-</section>
+<button class="cta" onclick="document.getElementById('booking').scrollIntoView()">Book Private Session</button>
+</header>
 
 <section>
-<h2 class="section-title">Private Sessions</h2>
+<h2 class="section-title">Our Private Sessions</h2>
+
 <div class="grid">
 <div class="card">
 <h3>General Guidance</h3>
 <p>Family • Career • Life • Crush</p>
-<div class="price">₹149 • 40 Min</div>
+<div class="price">₹149 • 40 Minutes</div>
 </div>
+
 <div class="card">
 <h3>Partner Conflict</h3>
-<p>Structured clarity session</p>
-<div class="price">₹249 • 40 Min</div>
+<p>Structured clarity & resolution</p>
+<div class="price">₹249 • 40 Minutes</div>
 </div>
+
 <div class="card">
 <h3>Breakup Recovery</h3>
-<p>Emotional reset & stability</p>
-<div class="price">₹349 • 45 Min</div>
+<p>Emotional reset & stabilization</p>
+<div class="price">₹349 • 45 Minutes</div>
 </div>
+
 <div class="card">
 <h3>Deep Reset Intensive</h3>
 <p>Focused transformation session</p>
-<div class="price">₹399 • 60 Min</div>
+<div class="price">₹399 • 60 Minutes</div>
 </div>
 </div>
 </section>
@@ -191,7 +197,7 @@ font-size:14px;
 <h2 class="section-title">Book Appointment</h2>
 
 <form onsubmit="pay(event)">
-<input type="text" id="name" placeholder="Full Name" required>
+<input type="text" placeholder="Full Name" required>
 <input type="email" placeholder="Email Address" required>
 <input type="tel" placeholder="Phone Number" required>
 
@@ -206,7 +212,7 @@ font-size:14px;
 <input type="date" required>
 <input type="time" required>
 
-<button class="submit-btn">Confirm & Pay</button>
+<button class="submit">Confirm & Pay</button>
 </form>
 </section>
 
@@ -215,17 +221,17 @@ font-size:14px;
 
 <div class="policy">
 <h3>Appointment Policy</h3>
-<p>Advance booking required. Reschedule up to 12 hours prior. Missed sessions without notice are non-adjustable.</p>
+<p>Advance booking required. Rescheduling allowed 12 hours prior. Missed sessions without notice are non-adjustable.</p>
 </div>
 
 <div class="policy">
 <h3>Payment Policy</h3>
-<p>UPI payment only. Booking confirmed after successful payment. All payments are non-refundable.</p>
+<p>UPI payment only. Booking confirmed after successful transaction. Payments are non-refundable.</p>
 </div>
 
 <div class="policy">
 <h3>Conduct Policy</h3>
-<p>Strict confidentiality maintained. Inappropriate behavior results in termination without refund. This is guidance support, not medical therapy.</p>
+<p>Strict confidentiality maintained. Inappropriate behavior leads to termination without refund. This platform offers guidance, not medical therapy.</p>
 </div>
 
 </section>
