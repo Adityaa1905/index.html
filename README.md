@@ -3,99 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velora — Where Emotion Meets Clarity</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Private Emotional Guidance</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
-body{background:#0f0f0f;color:#ffffff;line-height:1.6;}
-section{padding:70px 20px;max-width:1000px;margin:auto;}
-h1,h2{margin-bottom:20px;}
-.hero{text-align:center;padding:120px 20px;}
-.hero h1{font-size:3rem;font-weight:700;}
-.hero p{opacity:.8;margin-top:10px;font-size:1.1rem;}
-.btn{display:inline-block;margin-top:25px;background:#2563eb;padding:12px 28px;border-radius:8px;color:#fff;text-decoration:none;font-weight:600;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px;}
-.card{background:#1a1a1a;padding:25px;border-radius:12px;}
-.schedule,.pricing,.booking,.terms{background:#151515;padding:35px;border-radius:12px;margin-top:50px;}
-input,select{width:100%;padding:12px;margin:12px 0;border:none;border-radius:8px;background:#1c1c1c;color:#fff;}
-label{font-size:14px;opacity:.8;}
-button{background:#2563eb;color:#fff;padding:12px 25px;border:none;border-radius:8px;font-weight:600;cursor:pointer;}
-button:hover{opacity:.85;}
-.note{font-size:14px;opacity:.7;margin-top:8px;}
-footer{text-align:center;padding:30px;font-size:14px;opacity:.6;}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2c2c2c;
+}
+
+header {
+    background-color: #0b1f3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #0b1f3a;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #0b1f3a;
+}
+
+.price {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #0b1f3a;
+    font-weight: bold;
+}
+
+button {
+    background-color: #0b7a75;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #095e5a;
+}
+
+footer {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
 </style>
 </head>
+
 <body>
 
-<section class="hero">
-<h1>Velora</h1>
-<p>Where Emotion Meets Clarity</p>
-<a href="#booking" class="btn">Book Your Session</a>
-</section>
+<header>
+    <h1>Private Emotional Guidance</h1>
+    <p>Confidential • Structured • Practical Support</p>
+</header>
 
-<section>
-<h2>Categories</h2>
-<div class="cards">
-<div class="card">Career Confusion</div>
-<div class="card">Breakup Recovery</div>
-<div class="card">One-sided Love</div>
-<div class="card">Crush Clarity</div>
-<div class="card">Relationship Decisions</div>
-<div class="card">Loneliness</div>
+<div class="container">
+
+    <div class="section-title">Standard Sessions (35–40 Min)</div>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Family Issues</h3>
+            <div class="price">₹149</div>
+            <button>Book Session</button>
+        </div>
+
+        <div class="card">
+            <h3>Career Clarity</h3>
+            <div class="price">₹149</div>
+            <button>Book Session</button>
+        </div>
+
+        <div class="card">
+            <h3>Life Confusion</h3>
+            <div class="price">₹149</div>
+            <button>Book Session</button>
+        </div>
+
+        <div class="card">
+            <h3>Crush Guidance</h3>
+            <div class="price">₹149</div>
+            <button>Book Session</button>
+        </div>
+
+        <div class="card">
+            <h3>Partner Conflict</h3>
+            <div class="price">₹249</div>
+            <button>Book Session</button>
+        </div>
+
+        <div class="card">
+            <h3>Breakup Recovery</h3>
+            <div class="price">₹349</div>
+            <button>Book Session</button>
+        </div>
+
+    </div>
+
 </div>
-</section>
 
-<section class="schedule">
-<h2>Session Availability</h2>
-<p><strong>Maximum 10 Sessions Per Day</strong></p>
-<p>Monday – Saturday<br>12:00 PM – 6:00 PM</p>
-<p>Sunday – Closed</p>
-<p class="note">Slots close automatically once filled.</p>
-</section>
+<div class="container">
 
-<section class="pricing">
-<h2>Pricing</h2>
-<p><strong>Standard Session – ₹300</strong></p>
-<p class="note">Returning clients may receive special member rate.</p>
+    <div class="section-title">Deep Reset Sessions (60 Min)</div>
 
-<a class="btn" href="upi://pay?pa=velora.aditya@fam&pn=Velora&am=300&cu=INR">
-Pay ₹300 via UPI
-</a>
+    <div class="card-grid">
 
-<p class="note">Complete payment before submitting the booking form.</p>
-</section>
+        <div class="card">
+            <h3>General Deep Session</h3>
+            <div class="price">₹249</div>
+            <button>Book Session</button>
+        </div>
 
-<section id="booking" class="booking">
-<h2>Book Appointment</h2>
+        <div class="card">
+            <h3>Partner Deep Session</h3>
+            <div class="price">₹349</div>
+            <button>Book Session</button>
+        </div>
 
-<!-- GOOGLE FORM EMBED (EASIEST & NO BACKEND REQUIRED) -->
-<iframe src="PASTE_YOUR_GOOGLE_FORM_LINK_HERE"
-width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0"
-style="background:#1a1a1a;border-radius:12px;">
-Loading…
-</iframe>
+        <div class="card">
+            <h3>Breakup Deep Reset</h3>
+            <div class="price">₹399</div>
+            <button>Book Session</button>
+        </div>
 
-</section>
+    </div>
 
-<section class="terms">
-<h2>Policy</h2>
-<p>
-• Full payment required before booking confirmation.<br>
-• Screenshot upload mandatory inside form.<br>
-• Reschedule allowed only if requested 12 hours before session.<br>
-• Only one reschedule permitted per booking.<br>
-• No refund once session has started.<br>
-• This is a structured clarity consultation, not therapy.<br>
-• Client is responsible for decisions taken after session.
-</p>
-</section>
+</div>
+
+<div class="container">
+    <div class="section-title">Priority Add-On</div>
+    <div class="card">
+        <h3>Same Day Private Slot</h3>
+        <div class="price">+ ₹199</div>
+        <button>Request Priority</button>
+    </div>
+</div>
 
 <footer>
-© 2026 Velora. All rights reserved.
+    <p>100% Confidential • Limited Slots Daily</p>
 </footer>
 
 </body>
 </html>
-initial website
-
-# index.html
