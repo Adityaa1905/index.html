@@ -3,100 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Private Emotional Guidance</title>
+<title>Velora | Where Emotions Meet Clarity</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
 body{
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:#fff;
-min-height:100vh;
+background:#f5f7fa;
+color:#1c1c1c;
 }
 
 header{
+background:#0b1f3a;
+color:#fff;
+padding:60px 20px;
 text-align:center;
-padding:40px 20px;
 }
 
 header h1{
-font-size:36px;
-font-weight:600;
+font-size:42px;
+font-weight:700;
 }
 
 header p{
-opacity:0.8;
 margin-top:10px;
+font-size:18px;
+opacity:0.8;
 }
 
 .container{
 max-width:1100px;
 margin:auto;
-padding:20px;
+padding:50px 20px;
 }
 
 .section-title{
 text-align:center;
-margin:40px 0 20px;
-font-size:24px;
-font-weight:500;
+font-size:28px;
+margin-bottom:40px;
+color:#0b1f3a;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
 .card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(10px);
-border-radius:16px;
+background:#fff;
 padding:25px;
-text-align:center;
-transition:0.3s;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
-}
-
-.card:hover{
-transform:translateY(-6px);
-background:rgba(255,255,255,0.15);
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
 .card h3{
-margin-bottom:10px;
-font-weight:500;
+margin-bottom:8px;
+color:#0b1f3a;
 }
 
 .price{
-font-size:22px;
-margin:10px 0;
 font-weight:600;
-color:#00ffd5;
+margin:10px 0;
+color:#0b1f3a;
 }
 
 button{
-margin-top:10px;
 padding:10px 18px;
 border:none;
-border-radius:30px;
-background:#00ffd5;
-color:#000;
-font-weight:600;
+background:#0b7a75;
+color:#fff;
+border-radius:8px;
 cursor:pointer;
-transition:0.3s;
+margin-top:10px;
 }
 
 button:hover{
-background:#00c9a7;
+background:#095e5a;
+}
+
+form{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+max-width:600px;
+margin:auto;
+}
+
+form input, form select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.policy{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+margin-bottom:20px;
 }
 
 footer{
+background:#0b1f3a;
+color:#fff;
 text-align:center;
 padding:30px;
-opacity:0.7;
 margin-top:40px;
 }
 </style>
@@ -105,90 +122,102 @@ margin-top:40px;
 <body>
 
 <header>
-<h1>Private Emotional Guidance</h1>
-<p>Confidential • Structured • Limited Slots Daily</p>
+<h1>Velora</h1>
+<p>Where Emotions Meet Clarity</p>
 </header>
 
 <div class="container">
 
-<div class="section-title">Standard Sessions (40 Min)</div>
+<div class="section-title">Our Services</div>
 
 <div class="grid">
 
 <div class="card">
 <h3>Family / Career / Life / Crush</h3>
-<div class="price">₹149</div>
-<a href="upi://pay?pa=velora.aditya@fam&pn=Private%20Guidance&am=149&cu=INR">
-<button>Pay & Book</button>
-</a>
+<p>Structured private guidance session</p>
+<div class="price">₹149 • 40 Minutes</div>
 </div>
 
 <div class="card">
 <h3>Partner Conflict</h3>
-<div class="price">₹249</div>
-<a href="upi://pay?pa=velora.aditya@fam&pn=Private%20Guidance&am=249&cu=INR">
-<button>Pay & Book</button>
-</a>
+<p>Conflict resolution & emotional clarity</p>
+<div class="price">₹249 • 40 Minutes</div>
 </div>
 
 <div class="card">
 <h3>Breakup Recovery</h3>
-<div class="price">₹349</div>
-<a href="upi://pay?pa=velora.aditya@fam&pn=Private%20Guidance&am=349&cu=INR">
-<button>Pay & Book</button>
-</a>
-</div>
-
-</div>
-
-<div class="section-title">Deep Reset (60 Min)</div>
-
-<div class="grid">
-
-<div class="card">
-<h3>General Deep Session</h3>
-<div class="price">₹249</div>
-<a href="upi://pay?pa=velora.aditya@fam&pn=Deep%20Session&am=249&cu=INR">
-<button>Pay & Book</button>
-</a>
+<p>Emotional reset & stability session</p>
+<div class="price">₹349 • 45 Minutes</div>
 </div>
 
 <div class="card">
-<h3>Partner Deep Session</h3>
-<div class="price">₹349</div>
-<a href="upi://pay?pa=velora.aditya@fam&pn=Deep%20Session&am=349&cu=INR">
-<button>Pay & Book</button>
-</a>
-</div>
-
-<div class="card">
-<h3>Breakup Deep Reset</h3>
-<div class="price">₹399</div>
-<a href="upi://pay?pa=velora.aditya@fam&pn=Deep%20Reset&am=399&cu=INR">
-<button>Pay & Book</button>
-</a>
+<h3>Deep Reset Session</h3>
+<p>Intensive emotional clarity session</p>
+<div class="price">₹399 • 60 Minutes</div>
 </div>
 
 </div>
 
-<div class="section-title">Priority Slot</div>
-
-<div class="grid">
-<div class="card">
-<h3>Same Day Private Slot</h3>
-<div class="price">+ ₹199</div>
-<a href="upi://pay?pa=velora.aditya@fam&pn=Priority%20Slot&am=199&cu=INR">
-<button>Upgrade</button>
-</a>
 </div>
+
+<div class="container">
+
+<div class="section-title">Book Appointment</div>
+
+<form onsubmit="redirectPayment(event)">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option value="">Select Service</option>
+<option value="149">General Session - ₹149</option>
+<option value="249">Partner Conflict - ₹249</option>
+<option value="349">Breakup Recovery - ₹349</option>
+<option value="399">Deep Reset - ₹399</option>
+</select>
+
+<input type="date" required>
+<input type="time" required>
+
+<button type="submit">Confirm & Pay</button>
+</form>
+
+</div>
+
+<div class="container">
+
+<div class="section-title">Policies</div>
+
+<div class="policy">
+<h3>Appointment Policy</h3>
+<p>All sessions must be booked in advance. Appointment confirmation is sent after successful payment. Rescheduling allowed 12 hours prior.</p>
+</div>
+
+<div class="policy">
+<h3>Payment Policy</h3>
+<p>All payments are accepted via UPI only. Sessions are non-refundable once booked. In case of emergency reschedule, credit will be adjusted.</p>
+</div>
+
+<div class="policy">
+<h3>Call Conduct Policy</h3>
+<p>Sessions are strictly confidential. No abusive language or inappropriate requests tolerated. This is emotional support guidance, not medical or psychological therapy.</p>
 </div>
 
 </div>
 
 <footer>
-100% Confidential • Emotional Support Only • No Medical Claims
+© 2026 Velora • Private Emotional Guidance
 </footer>
+
+<script>
+function redirectPayment(event){
+event.preventDefault();
+let amount=document.querySelector("select").value;
+if(!amount){alert("Please select a service."); return;}
+window.location.href="upi://pay?pa=velora.aditya@fam&pn=Velora&am="+amount+"&cu=INR";
+}
+</script>
 
 </body>
 </html>
-
