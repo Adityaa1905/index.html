@@ -3,251 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velora | Where Emotions Meet Clarity</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
+<title>VELORA | Where Emotions Meet Clarity</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+:root {
+    --navy:#0E1A2B;
+    --beige:#F5EFE6;
+    --gold:#C6A75E;
+    --card:#162538;
+}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:var(--navy);color:var(--beige);line-height:1.6;}
+.container{width:90%;max-width:1100px;margin:auto;}
+header{padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
+.logo{font-size:22px;font-weight:600;color:var(--gold);}
+.tagline{font-size:14px;color:#ccc;}
 
-body{
-background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
-color:#fff;
-overflow-x:hidden;
+.hero{padding:80px 0;text-align:center;}
+.hero h1{font-size:40px;margin-bottom:20px;}
+.hero p{color:#ccc;margin-bottom:30px;}
+.btn{
+    background:var(--gold);
+    color:#000;
+    padding:12px 25px;
+    border:none;
+    cursor:pointer;
+    font-weight:500;
+    text-decoration:none;
+    display:inline-block;
+    border-radius:4px;
 }
+.section{padding:60px 0;}
+.section h2{text-align:center;margin-bottom:40px;}
 
-header{
-text-align:center;
-padding:120px 20px 100px;
-background:radial-gradient(circle at center,#1e3a8a,#020617);
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
-
-header h1{
-font-size:64px;
-font-weight:800;
-background:linear-gradient(90deg,#00d4ff,#ffd700);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-header p{
-margin-top:15px;
-font-size:20px;
-opacity:0.9;
-}
-
-.cta{
-margin-top:35px;
-padding:16px 32px;
-border:none;
-border-radius:50px;
-background:linear-gradient(90deg,#ffd700,#00d4ff);
-color:#000;
-font-weight:700;
-cursor:pointer;
-font-size:16px;
-box-shadow:0 0 30px rgba(255,215,0,0.4);
-transition:0.3s;
-}
-
-.cta:hover{transform:scale(1.05);}
-
-section{
-max-width:1200px;
-margin:auto;
-padding:80px 20px;
-}
-
-.section-title{
-text-align:center;
-font-size:38px;
-font-weight:700;
-margin-bottom:60px;
-background:linear-gradient(90deg,#00d4ff,#ffd700);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
 .card{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
-backdrop-filter:blur(20px);
-padding:35px;
-border-radius:25px;
-transition:0.4s;
+    background:var(--card);
+    padding:25px;
+    border-radius:6px;
+    transition:0.3s;
 }
-
-.card:hover{
-transform:translateY(-8px);
-border:1px solid #ffd700;
-box-shadow:0 0 40px rgba(255,215,0,0.3);
-}
-
-.card h3{
-font-size:22px;
-margin-bottom:15px;
-}
-
-.price{
-margin-top:10px;
-font-size:18px;
-font-weight:600;
-color:#00d4ff;
-}
-
-form{
-background:rgba(255,255,255,0.05);
-padding:45px;
-border-radius:25px;
-border:1px solid rgba(255,255,255,0.1);
-backdrop-filter:blur(20px);
-max-width:700px;
-margin:auto;
-}
-
-form input, form select{
-width:100%;
-padding:16px;
-margin:14px 0;
-border-radius:12px;
-border:none;
-background:rgba(255,255,255,0.08);
-color:#fff;
-font-size:14px;
-}
-
-form input::placeholder{color:#ccc;}
-
-.submit{
-margin-top:15px;
-width:100%;
-padding:16px;
-border:none;
-border-radius:15px;
-background:linear-gradient(90deg,#ffd700,#00d4ff);
-color:#000;
-font-weight:700;
-font-size:16px;
-cursor:pointer;
-}
-
-.policy{
-background:rgba(255,255,255,0.05);
-padding:35px;
-border-radius:25px;
-border:1px solid rgba(255,255,255,0.1);
-margin-bottom:30px;
-}
-
+.card:hover{transform:translateY(-5px);}
+.card h3{margin-bottom:10px;color:var(--gold);}
+.price{margin:10px 0;font-weight:500;}
+.card p{font-size:14px;color:#ccc;margin-bottom:15px;}
 footer{
-text-align:center;
-padding:50px 20px;
-opacity:0.7;
-font-size:14px;
-border-top:1px solid rgba(255,255,255,0.1);
+    padding:30px 0;
+    text-align:center;
+    font-size:13px;
+    border-top:1px solid rgba(255,255,255,0.08);
+    color:#aaa;
 }
+.small{font-size:12px;color:#888;margin-top:10px;}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Velora</h1>
-<p>Where Emotions Meet Clarity</p>
-<button class="cta" onclick="document.getElementById('booking').scrollIntoView()">Book Private Session</button>
+<div class="container">
+<div class="logo">VELORA</div>
+<div class="tagline">Where Emotions Meet Clarity</div>
+</div>
 </header>
 
-<section>
-<h2 class="section-title">Our Private Sessions</h2>
+<section class="hero">
+<div class="container">
+<h1>Confused About Love, Career or Your Own Mind?</h1>
+<p>Talk it out. Think it through. Leave with clarity in one structured session.</p>
+<a href="#services" class="btn">Book Your Session</a>
+</div>
+</section>
 
-<div class="grid">
+<section class="section" id="services">
+<div class="container">
+<h2>Clarity Sessions</h2>
+<div class="cards">
+
 <div class="card">
-<h3>General Guidance</h3>
-<p>Family • Career • Life • Crush</p>
-<div class="price">₹149 • 40 Minutes</div>
+<h3>Partner Confusion</h3>
+<div class="price">₹119 | 30 mins</div>
+<p>Misunderstanding breakdown. Clear communication direction.</p>
+<a href="#" class="btn">Pay & Book</a>
 </div>
 
 <div class="card">
-<h3>Partner Conflict</h3>
-<p>Structured clarity & resolution</p>
-<div class="price">₹249 • 40 Minutes</div>
+<h3>Crush Clarity</h3>
+<div class="price">₹149 | 30 mins</div>
+<p>Confess or move on? Signals analysis + risk clarity.</p>
+<a href="#" class="btn">Pay & Book</a>
 </div>
 
 <div class="card">
-<h3>Breakup Recovery</h3>
-<p>Emotional reset & stabilization</p>
-<div class="price">₹349 • 45 Minutes</div>
+<h3>Friendship Issue</h3>
+<div class="price">₹149 | 30 mins</div>
+<p>Boundary setting. Conflict clarity. Emotional reset.</p>
+<a href="#" class="btn">Pay & Book</a>
 </div>
 
 <div class="card">
-<h3>Deep Reset Intensive</h3>
-<p>Focused transformation session</p>
-<div class="price">₹399 • 60 Minutes</div>
+<h3>Family Pressure</h3>
+<div class="price">₹159 | 30 mins</div>
+<p>Handle expectations without losing yourself.</p>
+<a href="#" class="btn">Pay & Book</a>
+</div>
+
+<div class="card">
+<h3>Breakup Reset</h3>
+<div class="price">₹259 | 40 mins</div>
+<p>Detach. Process. Move forward with structured clarity.</p>
+<a href="#" class="btn">Pay & Book</a>
+</div>
+
+<div class="card">
+<h3>Deep Talk / Self Clarity</h3>
+<div class="price">₹199 | 40 mins</div>
+<p>Overthinking detox. Identity direction. Mental alignment.</p>
+<a href="#" class="btn">Pay & Book</a>
+</div>
+
 </div>
 </div>
 </section>
 
-<section id="booking">
-<h2 class="section-title">Book Appointment</h2>
-
-<form onsubmit="pay(event)">
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
-<input type="tel" placeholder="Phone Number" required>
-
-<select id="service" required>
-<option value="">Select Service</option>
-<option value="149">General - ₹149</option>
-<option value="249">Partner - ₹249</option>
-<option value="349">Breakup - ₹349</option>
-<option value="399">Deep Reset - ₹399</option>
-</select>
-
-<input type="date" required>
-<input type="time" required>
-
-<button class="submit">Confirm & Pay</button>
-</form>
-</section>
-
-<section>
-<h2 class="section-title">Policies</h2>
-
-<div class="policy">
-<h3>Appointment Policy</h3>
-<p>Advance booking required. Rescheduling allowed 12 hours prior. Missed sessions without notice are non-adjustable.</p>
+<section class="section">
+<div class="container" style="text-align:center;">
+<h2>How It Works</h2>
+<p>1. Choose your session<br>
+2. Pay via UPI<br>
+3. Pick your time slot<br>
+4. Receive confirmation & clarity call</p>
 </div>
-
-<div class="policy">
-<h3>Payment Policy</h3>
-<p>UPI payment only. Booking confirmed after successful transaction. Payments are non-refundable.</p>
-</div>
-
-<div class="policy">
-<h3>Conduct Policy</h3>
-<p>Strict confidentiality maintained. Inappropriate behavior leads to termination without refund. This platform offers guidance, not medical therapy.</p>
-</div>
-
 </section>
 
 <footer>
-© 2026 Velora • Private Emotional Guidance
+<div class="container">
+<p>Confidential & judgement-free space.</p>
+<p class="small">VELORA is not a replacement for licensed therapy or medical advice. Emergency cases are not handled.</p>
+</div>
 </footer>
-
-<script>
-function pay(e){
-e.preventDefault();
-let amount=document.getElementById("service").value;
-if(!amount){alert("Select service");return;}
-window.location.href="upi://pay?pa=velora.aditya@fam&pn=Velora&am="+amount+"&cu=INR";
-}
-</script>
 
 </body>
 </html>
